@@ -1,17 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import { createBrowserRouter, RouterProvider } from'react-router-dom';
+import Home from './Home';
+import './react18/styles/main.css';
+import React24App from './react24/pages/App';
+import React24Test from './react24/pages/test';
+import React18App from './react18/App';
 
+const router = createBrowserRouter([
+  { path: '/', element: <Home /> },
+  { path: '/react24/app', element: <React24App /> },
+  { path: '/react24/test', element: <React24Test /> },
+  { path: '/react18/app', element: <React18App /> },
+])
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <RouterProvider router={router} />
   </React.StrictMode>
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();

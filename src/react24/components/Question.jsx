@@ -1,7 +1,7 @@
-import { useState } from "react";
+// import { useState } from "react";
 
 const Question = ({ title, info }) => {
-    const [showInfo, setShowInfo] = useState(false);
+    // const [showInfo, setShowInfo] = useState(false);
     return(
         <article className="question">
             <header>
