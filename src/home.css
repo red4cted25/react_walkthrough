@@ -6,15 +6,9 @@
 }
 
 /* Apply a clean, modern font */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f8f9fa; /* Light gray background for contrast */
-    color: #333; /* Dark text color for readability */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh; /* Full viewport height */
-    margin: 0;
+.home-page {
+    text-align: center;
+    margin-top: 20%;
 }
 
 /* Center the content container */
